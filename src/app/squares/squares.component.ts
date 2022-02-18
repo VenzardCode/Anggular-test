@@ -53,7 +53,7 @@ export class SquaresComponent implements OnInit {
         this.squares.push({id:id,...targetSquare});
     }
       for (id;id<6;id++){
-        let randColor=colors[this.randomNumber(0,colors.length)];
+        let randColor=colors[Math.floor(this.randomNumber(0,colors.length))];
         this.squares.push({id:id,...randColor})
       }
   }
