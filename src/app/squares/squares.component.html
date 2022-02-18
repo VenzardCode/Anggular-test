@@ -1,0 +1,7 @@
+<div class="wrapper">
+<div class="box" *ngFor="let square of squares" [ngClass]="{'checked':square.checked}"  (click)="checkSquare(square.id)" [ngStyle]="{'background-color':square.color}"></div>
+</div>
+<button (click)="checkCondition()">check </button>
+
+
+
